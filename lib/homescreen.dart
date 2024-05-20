@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
               color: Colors.yellow,
               borderRadius: BorderRadius.circular(14.0)
             ),
-            child: Image.asset("Assets/Images/torch.jpg",)
+            child: Image.asset("Assets/Images/torch.jpg",fit: BoxFit.fill,)
           ),
         ),
       ),
