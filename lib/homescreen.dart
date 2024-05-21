@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text("Torch",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 32),),
+        title: Text("HSN Torch",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontSize: 32),),
       ),
       body: Center(
         child: GestureDetector(
@@ -34,8 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 150,
             width: 150,
             decoration: BoxDecoration(
-              color: Colors.yellow,
-              borderRadius: BorderRadius.circular(14.0)
+              borderRadius: BorderRadius.circular(24.0),
             ),
             child: Image.asset("Assets/Images/torch.jpg",fit: BoxFit.fill,)
           ),
