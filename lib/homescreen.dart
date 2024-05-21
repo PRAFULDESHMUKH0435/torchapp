@@ -12,7 +12,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     // TODO: implement initState
-    final torchController = TorchController();
+    TorchController().initialize();
     super.initState();
   }
 
@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Center(
         child: GestureDetector(
-          onTap: () async{
+          onTap: () {
             torchController.toggle();
           },
           child: Container(
