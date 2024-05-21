@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:torch_controller/torch_controller.dart';
 
+import 'SplashScreen.dart';
 import 'homescreen.dart';
 void main(){
   runApp(MyApp());
@@ -15,17 +16,10 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   @override
-  void initState() {
-    // TODO: implement initState
-    TorchController().initialize();
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }

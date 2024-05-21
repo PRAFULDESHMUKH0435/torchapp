@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Center(
         child: GestureDetector(
-          onTap: (){
+          onTap: () async{
             torchController.toggle();
           },
           child: Container(
